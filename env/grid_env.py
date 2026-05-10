@@ -29,7 +29,7 @@ class GridEnv(gym.Env):
         # LOAD IEEE 39 BUS SYSTEM
         # ==================================================
 
-        self.net = pn.case118()
+        self.net = pn.case39()
 
         # ==================================================
         # ACTION SPACE
@@ -67,7 +67,7 @@ class GridEnv(gym.Env):
                 "edge_index": Box(
                     low=0,
                     high=100,
-                    shape=(2, 500),
+                    shape=(2, 100),
                     dtype=np.int64
                 )
             })
