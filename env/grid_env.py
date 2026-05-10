@@ -67,7 +67,7 @@ class GridEnv(gym.Env):
                 "edge_index": Box(
                     low=0,
                     high=100,
-                    shape=(2, 100),
+                    shape=(2, 500),
                     dtype=np.int64
                 )
             })
@@ -200,7 +200,7 @@ class GridEnv(gym.Env):
                 edges.append([to_bus, from_bus])
 
         # Padding
-        max_edges = 100
+        max_edges = 500
 
         while len(edges) < max_edges:
             edges.append([0, 0])
