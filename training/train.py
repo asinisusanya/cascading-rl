@@ -125,7 +125,7 @@ elif EXPERIMENT == "gnn_ppo_or":
 
 print("\nTraining started...\n")
 
-model.learn(total_timesteps=50000)
+model.learn(total_timesteps=30000)
 
 print("\nTraining finished!\n")
 
