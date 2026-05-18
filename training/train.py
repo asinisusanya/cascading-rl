@@ -34,8 +34,8 @@ if EXPERIMENT == "ppo":
     model = PPO(
         "MlpPolicy",
         env,
-        verbose=2,
-        n_steps=64,
+        verbose=1,
+        n_steps=1024,
         batch_size=256,
         device="cuda"
     )
@@ -129,7 +129,7 @@ elif EXPERIMENT == "gnn_ppo_or":
 
 print("\nTraining started...\n")
 
-model.learn(total_timesteps=500)
+model.learn(total_timesteps=50000)
 
 print("\nTraining finished!\n")
 
