@@ -36,7 +36,8 @@ if EXPERIMENT == "ppo":
         env,
         verbose=1,
         n_steps=1024,
-        batch_size=256
+        batch_size=256,
+        device="cuda"
     )
 
 
@@ -57,7 +58,8 @@ elif EXPERIMENT == "ppo_or":
         env,
         verbose=1,
         n_steps=1024,
-        batch_size=256
+        batch_size=256,
+        device="cuda"
     )
 
 
@@ -86,7 +88,8 @@ elif EXPERIMENT == "gnn_ppo":
         policy_kwargs=policy_kwargs,
         verbose=1,
         n_steps=1024,
-        batch_size=256
+        batch_size=256,
+        device="cuda"
     )
 
 
@@ -115,7 +118,8 @@ elif EXPERIMENT == "gnn_ppo_or":
         policy_kwargs=policy_kwargs,
         verbose=1,
         n_steps=1024,
-        batch_size=256
+        batch_size=256,
+        device="cuda"
     )
 
 
