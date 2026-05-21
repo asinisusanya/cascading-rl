@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 
 from stable_baselines3 import PPO
 
