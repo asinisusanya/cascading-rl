@@ -28,10 +28,10 @@ class GridEnv(gym.Env):
         self.use_or = use_or
 
         # ==================================================
-        # LOAD IEEE 39 BUS SYSTEM
+        # LOAD IEEE 57 BUS SYSTEM
         # ==================================================
 
-        self.net = pn.case39()
+        self.net = pn.case57()
 
         # ==================================================
         # ACTION SPACE
@@ -441,7 +441,7 @@ class GridEnv(gym.Env):
 
         while True:
 
-            self.net = pn.case39()
+            self.net = pn.case57()
 
             # Stress
             self.increase_load(1.1)
