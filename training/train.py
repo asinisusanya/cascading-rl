@@ -1,6 +1,9 @@
 import warnings
 warnings.filterwarnings("ignore")
 
+import logging
+logging.getLogger().setLevel(logging.ERROR)
+
 
 from stable_baselines3 import PPO
 
