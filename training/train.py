@@ -1,8 +1,7 @@
 import warnings
-warnings.filterwarnings("ignore")
 
-import logging
-logging.getLogger().setLevel(logging.ERROR)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+warnings.filterwarnings("ignore")
 
 
 from stable_baselines3 import PPO

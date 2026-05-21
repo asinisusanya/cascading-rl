@@ -1,3 +1,5 @@
+import warnings
+warnings.simplefilter("ignore")
 
 import pandapower as pp
 import pandapower.networks as pn
